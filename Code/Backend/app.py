@@ -153,11 +153,11 @@ def update_led_strip():
         led_rood()
         DataRepository.insert_color(1)
 
-    elif 50 < percentcal < 80 and prefstate != 2:
+    elif 50 =< percentcal < 80 and prefstate != 2:
         led_oranje()
         DataRepository.insert_color(2)
 
-    elif 80 < percentcal and prefstate != 3:
+    elif 80 =< percentcal and prefstate != 3 and percentcal < 100:
         led_groen()
         DataRepository.insert_color(3)
 
