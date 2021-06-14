@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Project One: Motivation Lock</title>
+    <meta name="description" content="TDe is mijn site voor Project One" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#006656" />
+
+    <link rel="icon" href="favicon.svg" />
+    <link rel="icon" href="apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gjv2rsm.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+    <script src="script/datahandler.js"></script>
+    <script src="script/projectone.js"></script>
+  </head>
+  <body>
+    <header class="o-row o-row--lg o-row--green">
+      <div class="o-container">
+        <div class="c-header">Motivation Lock</div>
+      </div>
+    </header>
+    <div class="o-row">
+      <div class="o-container">
+        <h1>Vul de gevraagde gegevens in!</h1>
+      </div>
+    </div>
+    <form action="stats.html" method="GET" class="o-row o-row--lg">
+      <div class="o-container">
+        <div class="o-section o-section--lg">        
+          <div class="o-layout o-layout--gutter o-layout--align-content-space-between c-form-item">
+          <label for="gewensteCalorieen" class="o-layout__item u-1-of-2-bp3 c-label">Gewenste aantal verbrande caloorieën (in cal)</label>
+          <input type="text" class="o-layout__item u-1-of-2-bp3 js-gewensteCalorieen c-input" id="gewensteCalorieen" name="gewensteCalorieen" placeholder="bv. 2000"/>
+        </div>
+        <div class="o-layout o-layout--gutter o-layout--align-content-space-between c-form-item">
+          <label for="geslacht" class="o-layout__item u-1-of-2-bp3 c-label">Geslacht</label>
+          <select name="geslacht" id="geslacht" class="o-layout__item u-1-of-2-bp3 js-geslacht c-input">
+            <option value="m">man</option>
+            <option value="v">vrouw</option>
+          </select>
+        </div>
+        <div class="o-layout o-layout--gutter o-layout--align-content-space-between c-form-item">
+          <label for="leeftijd" class="o-layout__item u-1-of-2-bp3 c-label">Leeftijd</label>
+          <input type="text" class="o-layout__item u-1-of-2-bp3 js-leeftijd c-input" id="leeftijd" name="leeftijd" placeholder="bv. 20"/>
+        </div>
+        <div class="o-layout o-layout--gutter o-layout--align-content-space-between c-form-item">
+          <label for="gewicht" class="o-layout__item u-1-of-2-bp3 c-label">Gewicht (in kg)</label>
+          <input type="text" class="o-layout__item u-1-of-2-bp3 js-gewicht c-input" id="gewicht" name="gewicht" placeholder="bv. 77.5" />
+        </div>
+      </div>
+      <div class="u-center"><button class="c-button js-reset" type="submit">Volgende</button></div>
+    </form>
+  </body>
+</html>
